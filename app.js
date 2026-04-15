@@ -11,6 +11,7 @@ var urlMap = [
 	];
 
 var service = require("./lib/service").http(urlMap);
+var ec2_info = require("./lab/ec2_info").lab;
 
 service(PORT);
 
